@@ -1,0 +1,119 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+:root{
+    --p:10px
+}
+
+a{
+    text-decoration: none;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Khu vuc navbar */
+nav{
+    background-color: darkcyan;
+}
+
+ul.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.menu > li{
+    border-left: 1px solid;
+}
+
+ul.menu > li > a{
+    display: block;
+    padding: 1.3rem;
+}
+
+ul.menu > li > a:hover{
+    background-color: darkblue;
+    color: white;
+}
+
+/* Khu vuc header */
+header{
+    background: linear-gradient( darkblue, blue);
+}
+h1.subject{
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 3px 2px 1px whitesmoke;
+}
+
+
+/* Khu vuc Footer */
+footer{
+    background-color: #0a6fa3;
+}
+
+footer > ul > li{
+    color:white;
+    list-style: none;
+}
+
+footer > ul{
+    padding: 5px;
+}
+
+/* Khu vuc Main */
+.course{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.avatar{
+    width: 120px;
+    border-radius: 50%;
+}
+
+.course .title{
+    background-color: blue;
+    color: white;
+    padding: var(--p);
+    margin-bottom: 0;
+    border-radius: var(--p) var(--p) 0 0;
+}
+
+.forum{
+    padding: var(--p);
+    border-bottom: 1px solid white;
+    background-color: lightskyblue;
+}
+
+.forum > p:last-child{
+    direction: rtl;
+}
+
+.forum:last-child{
+    border-radius: 0 0 var(--p) var(--p);
+}
+
+/* Khu vuc ADS */
+.ads > div{
+    width: 14%;
+    background: linear-gradient(rgb(76, 174, 231), lightblue);
+    color:white;
+    text-align: center;
+    padding: 10rem 0;
+    border-radius: var(--p);
+    margin-top: 5px;
+    position: fixed;
+}
+
+.ads > div:first-child{
+    left:0.5%;
+}
+.ads > div:last-child{
+    right:0.5%;
+}
